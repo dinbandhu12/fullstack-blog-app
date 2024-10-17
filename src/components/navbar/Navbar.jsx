@@ -2,6 +2,8 @@ import React from 'react'
 import styles from './navbar.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
+import ThemeToggle from '../themeToggle/ThemeToggle'
+import AuthLinks from '../authLinks/AuthLinks'
 
 const Navbar = () => {
   return (
@@ -14,9 +16,11 @@ const Navbar = () => {
       </div>
       <div className={styles.logo}>DBS Blog</div>
       <div className={styles.links}>
-        <Link href='/'>Home</Link>
-        <Link href='/'>Contact</Link>
-        <Link href='/'>About</Link>
+        <ThemeToggle />
+        <Link href='/' className={styles.navhome}>Home</Link>
+        <Link href='/' className={styles.navcontact}>Contact</Link>
+        <Link href='/' className={styles.navabout}>About</Link>
+        <AuthLinks />
       </div>
     </div>
   )
