@@ -16,11 +16,11 @@ const Navbar = () => {
       </div>
       <div className={styles.logo}>DBS Blog</div>
       <div className={styles.links}>
-        <ThemeToggle />
         <Link href='/' className={styles.navhome}>Home</Link>
         <Link href='/' className={styles.navcontact}>Contact</Link>
         <Link href='/' className={styles.navabout}>About</Link>
         <AuthLinks />
+        <ThemeToggle />
       </div>
     </div>
   )

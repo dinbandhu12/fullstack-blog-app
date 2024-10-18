@@ -20,6 +20,7 @@
 
 .links {
     display: flex;
+    align-items: center;
     gap: 1rem;
     flex: 1;
     font-size: 1.1rem;
@@ -32,3 +33,47 @@
 .navcontact:hover {
     font-weight: 800;
 } */
+
+@media screen and (max-width: 1280px) {
+    .logo {
+        font-size: 2rem;
+    }
+    .links {
+        font-size: 1rem;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .social {
+        display: none;
+    }
+    .logo {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .navhome {
+        display: none;
+    }
+    .navcontact {
+        display: none;
+    }
+    .navabout {
+        display: none;
+    }
+    .link {
+        display: none;
+    }
+    .links {
+        justify-content: flex-end;
+    }
+}
+
