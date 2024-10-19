@@ -19,7 +19,6 @@ const ThemeToggle = () => {
         ? { backgroundColor: "#f0f0f0" }
         : { backgroundColor: "#0f172a" }
     }
-
     >
       <Image src="/moon-fill.png" alt="moon" width={14} height={14} />
       <div

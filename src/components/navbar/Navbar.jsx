@@ -9,6 +9,10 @@ const Navbar = () => {
   return (
     <div className={styles.container}>
       <div className={styles.social}>
+        {/* change this to new design social media (LinkedIn -> LI, Github -> GH,) 
+          when hover the LI it will change to LinkedIn text and GH to Github text
+        */}
+        
         <Image src="/facebook.png" alt='facebook' width={24} height={24} />
         <Image src="/instagram.png" alt='facebook' width={24} height={24} />
         <Image src="/tiktok.png" alt='facebook' width={24} height={24} />

@@ -39,9 +39,9 @@ const AuthLink = () => {
               <span className={styles.link}>Logout</span>
             </>
           )}
-          <div className={styles.themeToggle}>
+          {/* <div className={styles.themeToggle}>
             <ThemeToggle />
-          </div>
+          </div> */}
         </div>
         
       )}
