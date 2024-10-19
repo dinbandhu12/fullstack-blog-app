@@ -94,7 +94,38 @@
 }
 
 .postBtn:hover {
-    background-color: #484a4d;
+    background-color: #326684;
     color: white;
     transition: all 0.3s ease-in-out;
+}
+
+
+/* responsiveness */
+
+@media screen and (max-width: 1280px) {
+    .title {
+        font-size: 3.2rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .title {
+        font-size: 3rem;
+    }
+
+    .postImg {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 2.8rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .title {
+        font-size: 2.6rem;
+    }
 }

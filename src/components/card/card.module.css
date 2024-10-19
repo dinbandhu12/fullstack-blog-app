@@ -1,0 +1,74 @@
+.container {
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 2.8rem;
+}
+
+.imageContainer {
+    flex: 1;
+    height: 20rem;
+    position: relative;
+}
+
+.image {
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.textContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.date {
+    color: gray;
+}
+
+.category {
+    color: crimson;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.heading {
+    font-size: 0.8rem;
+}
+
+.desc {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--softTextColor);
+}
+
+.readMoreBtn {
+    /* border-bottom: 2px solid rgb(35, 3, 111); */
+    width: max-content;
+    padding: 2px 0;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+.readMoreBtn:hover {
+    font-weight: 700;
+}
+.readMoreBtn::after {
+    content: ''; /* Empty content for the underline */
+    position: absolute;
+    bottom: 0;
+    left: 0; /* Start the line at 25% to center it */
+    width: 60%; /* Make the line half the width of the content */
+    height: 2px; /* Thickness of the bottom line */
+    border-radius: 50rem; /* Rounded corners */
+    background-color: rgb(52, 85, 157);
+    transition: all 0.3s ease-in-out;
+}
+.readMoreBtn:hover::after {
+    left: 0; /* Move the line to start from the left */
+    width: 100%; /* Expand the line to full width */
+    font-weight: 700;
+    background-color: rgb(7, 28, 71);
+    transition: all 0.3s ease-in-out;
+}
+
