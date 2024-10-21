@@ -1,0 +1,67 @@
+.categoryList {
+    margin-top: 2rem;
+    margin-bottom: 3.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.categoryItem {
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.categoryItem.style {
+    background-color: #57c4ff31;
+    transition: all 0.3s ease-in-out;
+}
+.categoryItem.style:hover {
+    background-color: #57c4ff6e;
+    transition: all 0.3s ease-in-out;
+}
+
+.categoryItem.fashion {
+    background-color: #da85c731;
+    transition: all 0.3s ease-in-out;
+}
+.categoryItem.fashion:hover {
+    background-color: #da85c87d;
+    transition: all 0.3s ease-in-out;
+}
+
+.categoryItem.food {
+    background-color: #7fb88133;
+    transition: all 0.3s ease-in-out;
+}
+.categoryItem.food:hover {
+    background-color: #7fb8817c;
+    transition: all 0.3s ease-in-out;
+}
+
+.categoryItem.travel {
+    background-color: #ff795736;
+    transition: all 0.3s ease-in-out;
+}
+.categoryItem.travel:hover {
+    background-color: #ff79577a;
+    transition: all 0.3s ease-in-out;
+}
+
+.categoryItem.culture {
+    background-color: #ffb04f45;
+    transition: all 0.3s ease-in-out;
+}
+.categoryItem.culture:hover {
+    background-color: #ffb04f89;
+    transition: all 0.3s ease-in-out;
+}
+
+.categoryItem.coding {
+    background-color: #5e4fff31;
+    transition: all 0.3s ease-in-out;
+}
+.categoryItem.coding:hover {
+    background-color: #5e4fff80;
+    transition: all 0.3s ease-in-out;
+}
