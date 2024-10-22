@@ -12,7 +12,6 @@
     background: -webkit-linear-gradient(#098398, #072375);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    /* transition: all 0.3s ease-in-out; */
     transition: background 0.3s ease-in-out, -webkit-background-clip 0.3s ease-in-out;
 }
 
@@ -45,6 +44,29 @@
     font-size: 2rem;
     font-weight: 300;
     letter-spacing: 2px;
+    margin-top: 1rem;
+}
+
+/* subheading # design */
+.software {
+    font-weight: 500;
+    color: rgb(8, 161, 182);
+}
+.eng {
+    font-weight: 500;
+    color: rgb(8, 20, 182);
+}
+.adv {
+    font-weight: 500;
+    color: rgb(12, 147, 7);
+}
+.tech {
+    font-weight: 500;
+    color: rgb(134, 12, 222);
+}
+.stories {
+    font-weight: 500;
+    color: rgb(211, 158, 13);
 }
 
 .post {

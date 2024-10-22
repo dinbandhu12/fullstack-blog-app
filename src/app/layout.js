@@ -8,7 +8,7 @@ import ThemeProvider from "@/providers/ThemeProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Blog App",
+  title: "DBS Blog",
   description: "The dbs blog app!",
 };
 
@@ -23,6 +23,7 @@ export default function RootLayout({ children }) {
                 <Navbar />
                 {children}
                 <Footer />
+                {/* TODO: Add privacy policy and terms of service here */}
               </div>
             </div>
           </ThemeProvider>

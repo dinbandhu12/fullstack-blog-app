@@ -13,12 +13,17 @@ const Navbar = () => {
           when hover the LI it will change to LinkedIn text and GH to Github text
         */}
         
+        {/* 
+        <Image src="/fb.svg" alt='facebook' width={32} height={32} className={styles.fb} />
+        */}
         <Image src="/facebook.png" alt='facebook' width={24} height={24} />
         <Image src="/instagram.png" alt='facebook' width={24} height={24} />
         <Image src="/tiktok.png" alt='facebook' width={24} height={24} />
         <Image src="/youtube.png" alt='facebook' width={24} height={24} />
       </div>
-      <div className={styles.logo}>DBS Blog</div>
+      <div className={styles.logo}>
+        <Link href="/"> DBS Blog </Link>
+      </div>
       <div className={styles.links}>
         <Link href='/' className={styles.navhome}>Home</Link>
         <Link href='/' className={styles.navcontact}>Contact</Link>

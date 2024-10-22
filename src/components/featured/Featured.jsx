@@ -7,7 +7,10 @@ const Featured = () => {
     <div className={styles.container}>
       <h1 className={styles.title}>
         <span className={styles.heading}> Welcome! I’m DBS </span> <br />
+        {/* 
         <p className={styles.subHeading}>This blog is where I unfold my software engineering adventures, share the lessons I’ve learned in the ever-evolving tech world, and tell some stories.</p>
+        */}
+        <p className={styles.subHeading}>This blog is where I unfold my <span className={styles.software}> #software </span> <span className={styles.eng}> #engineering </span> <span className={styles.adv}> #adventures</span>, share the lessons I’ve learned in the ever-evolving <span className={styles.tech}> #tech </span> world, and tell some <span className={styles.stories}> #stories</span>.</p>
       </h1>
       <div className={styles.post}>
         <div className={styles.postImg}>
