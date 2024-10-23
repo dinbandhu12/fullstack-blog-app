@@ -21,7 +21,7 @@ const Card = () => {
           corporis mollitia, iste dignissimos laboriosam exercitationem magni
           numquam assumenda, eos ab labore. Debitis, totam.
         </p>
-        <Link href="/" className={styles.readMoreBtn}>
+        <Link href="/demo" className={styles.readMoreBtn}>
           Read More
         </Link>
       </div>
