@@ -25,7 +25,7 @@ const AuthLink = () => {
     }
   };
 
-  const status = "notauthenticated";
+  const status = "authenticated";
 
   return (
     <>
