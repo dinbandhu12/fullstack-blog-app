@@ -4,10 +4,12 @@ import Link from "next/link";
 import styles from "./authLinks.module.css";
 import { useState } from "react";
 import ThemeToggle from "../themeToggle/ThemeToggle";
+import { signOut, useSession } from "next-auth/react";
 
 const AuthLink = () => {
   const [open, setOpen] = useState(false);
-  
+
+// animation code start here
   // for slide up and down animation
   const [isClosing, setIsClosing] = useState(false);
 
@@ -24,17 +26,18 @@ const AuthLink = () => {
       setOpen(true);
     }
   };
+  // animation code end here
 
-  const status = "authenticated";
+  const { status } = useSession(); 
 
   return (
     <>
-      {status === "notauthenticated" ? (
+      {status === "unauthenticated" ? (
         <Link href="/login" className={styles.link} >Login</Link>
       ) : (
         <>
-          <Link href="/write" className={styles.link} >WritePost</Link>
-          <span className={styles.link}>Logout</span>
+          <Link href="/writepost" className={styles.link} >WritePost</Link>
+          <span className={styles.link} onClick={signOut} >Logout</span>
         </>
       )}
       {/* <div className={styles.burger} onClick={() => setOpen(!open)}> */}
@@ -53,7 +56,7 @@ const AuthLink = () => {
             <Link href="/login">Login</Link>
           ) : (
             <>
-              <Link href="/write">WritePost</Link>
+              <Link href="/writepost">WritePost</Link>
               <span className={styles.link}>Logout</span>
             </>
           )}

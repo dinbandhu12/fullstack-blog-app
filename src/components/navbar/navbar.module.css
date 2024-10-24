@@ -22,6 +22,14 @@
     font-style: normal;
     color: #454141;
 }
+.logo:hover {
+    /* background: #738E99; */
+    background: linear-gradient(to right, #262829 0%, #244a76 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+}
 
 [data-theme="dark"] .logo {
     color: #DBD8D8;
